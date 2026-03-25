@@ -1,2 +1,8 @@
 print('Olá, Mundo!')
 print('Estou aprendendo python!')
+print(2+2)
+print('7' + '2')
+nome=input('Qual seu nome?')
+idade=input('Qual sua idade?')
+peso=input('Qual seu peso?')
+print(nome, idade, peso)
