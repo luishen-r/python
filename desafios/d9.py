@@ -1,4 +1,4 @@
-n=int(input('Digite um número: '))
+n = int(input('Digite um número: '))
 print('O número digitado foi: {}'.format(n))
 print('Sua tabuada é:')
 print('{} x 1 = {}'.format(n, n*1))
