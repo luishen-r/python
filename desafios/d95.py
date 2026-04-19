@@ -13,15 +13,13 @@ while True:
         gols.append(gol)
 
     jogador['gols'] = gols.copy()
-    jogador['total'] = sum(gols)
-    time.append(jogador.copy())
     
     for i in range(partidas):
         assistencia = int(input(f'    Quantas assistências na partida {i+1}? '))
         assistencias.append(assistencia)
 
     jogador['assistencias'] = assistencias.copy()
-    jogador['total_assistencias'] = sum(assistencias)
+    jogador['total'] = sum(gols) + sum(assistencias)
     time.append(jogador.copy())
     
     while True:
