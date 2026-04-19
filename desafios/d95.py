@@ -1,16 +1,27 @@
+print('='*30)
+print(f'{"FLORESTA FC":^30}')
+print('='*30)
 jogador = dict()
 time = list()
 while True:
     jogador['nome'] = str(input('Nome do Jogador: '))
     partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
     gols = list()
-
+    assistencias = list()
     for i in range(partidas):
         gol = int(input(f'    Quantos gols na partida {i+1}? '))
         gols.append(gol)
 
     jogador['gols'] = gols.copy()
     jogador['total'] = sum(gols)
+    time.append(jogador.copy())
+    
+    for i in range(partidas):
+        assistencia = int(input(f'    Quantas assistências na partida {i+1}? '))
+        assistencias.append(assistencia)
+
+    jogador['assistencias'] = assistencias.copy()
+    jogador['total_assistencias'] = sum(assistencias)
     time.append(jogador.copy())
     
     while True:
@@ -44,6 +55,8 @@ while True:
         break
     if busca <= len(time):
         print(f' -- LEVANTAMENTO DO JOGADOR {time[busca-1]["nome"].upper()}:')
+        for i, a in enumerate(time[busca-1]['assistencias']):
+            print(f'    No jogo {i+1} fez {a} assistências')
         for i, g in enumerate(time[busca-1]['gols']):
             print(f'    No jogo {i+1} fez {g} gols')
     else:
