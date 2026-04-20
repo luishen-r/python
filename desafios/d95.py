@@ -53,9 +53,9 @@ while True:
         break
     if busca <= len(time):
         print(f' -- LEVANTAMENTO DO JOGADOR {time[busca-1]["nome"].upper()}:')
-        for i, a in enumerate(time[busca-1]['assistencias']):
-            print(f'    No jogo {i+1} fez {a} assistências')
-        for i, g in enumerate(time[busca-1]['gols']):
-            print(f'    No jogo {i+1} fez {g} gols')
+        print(f'''    Partidas: {len(time[busca-1]["gols"])}
+        Gols: {sum(time[busca-1]["gols"])}
+        Assistências: {sum(time[busca-1]["assistencias"])}
+        Total: {time[busca-1]["total"]}''')
     else:
         print(f'ERRO! Não existe jogador com código {busca}! Tente novamente.')
