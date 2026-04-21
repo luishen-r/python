@@ -3,7 +3,7 @@ def escreva(msg):
     print('~' * tam)
     print(f'  {msg}')
     print('~' * tam)
-
-    
+     
+     
 escreva('Olá, Mundo!')
 escreva('Python é uma linguagem de programação ótima!')
