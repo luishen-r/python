@@ -1,0 +1,10 @@
+Luis;18
+Larissa;18
+Ramon;18
+Filho;17
+Rennan;18
+Miguel;18
+Iracema;49
+Lucas;11
+Gabriel;18
+Sofia;13
