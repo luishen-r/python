@@ -29,7 +29,7 @@ while True:
     if busca_produto.lower() == 'sair':
         print("Encerrando a busca.")
         break
-    print(f'Resultado da {busca_produto}: {resultado}')    
+    print(f'Resultado da busca {busca_produto}: {resultado}')    
 
 
 def contar_palavra(texto):
