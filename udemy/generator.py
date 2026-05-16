@@ -6,15 +6,19 @@ iterator = iter(iterable) #tem __next__ e __iter__
     #print(n)
     
 
-def generator(n=0, max=1):
-    while True:
-        yield n
-        n += 1
-        
-        if n >= max:
-            return
+def generator(max):
+    for i in range(max):
+        yield i
 
 
-gen = generator(max=100)
-for num in gen:
-    print(num)
+#gen = generator(max=100)
+#for num in gen:
+    #print(num)
+
+
+def gen1(gen, *args):
+    yield from gen(*args)
+    return "Função generator finalizada"
+ 
+
+g = gen1(generator, 100) 
