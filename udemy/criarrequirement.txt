@@ -1,0 +1,12 @@
+Para criar o requirements.txt
+
+1 - Esteja no venv
+2 - instale todas as bibliotecas necessárias
+3 - utilize o comando no terminal pip freeze > requirements.txt
+
+
+Para baixar as informações do requirements.txt
+
+1 - Crie um venv
+2 - Esteja com o arquivo requirements.txt na pasta do seu projeto, ou vá até a pasta do requirements pelo terminal
+3 - Utilize o comando pip install -r .\requirements.txt 
